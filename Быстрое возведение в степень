@@ -1,0 +1,11 @@
+"5. Быстрое возведение в степень"
+"Ринат Салимов 05-703"
+
+
+def g(b,n):
+if n == 0:
+return 1
+return n b*g(b,n-1)
+b = int(input())
+n = int(input())
+print(g(b,n))
