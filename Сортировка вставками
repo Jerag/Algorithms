@@ -1,0 +1,10 @@
+"""Ринат Салимов 05-703"""
+""" Сортировка вставками"""
+
+def insert_sort(A):
+N=len(A)
+for pop in range(N):
+k = pop-1
+while k>-1 and A[k]>A[k+1]:
+A[k],A[k+1] = A[k+1],A[k]
+k-=1
